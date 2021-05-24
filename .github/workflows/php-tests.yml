@@ -1,4 +1,5 @@
-name: PHP Composer
+
+name: PHP Tests
 
 on:
   push:
@@ -36,5 +37,6 @@ jobs:
       run: pwd
     - name: What's here
       run: ls -la
+
     - name: Run test suite
       run: php ./vendor/bin/phpunit
