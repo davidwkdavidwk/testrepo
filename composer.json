@@ -9,5 +9,8 @@
             "email": "davidwk@goshen.edu"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/symfony": "^5.2",
+        "phpunit/phpunit": "^8.5"
+    }
 }
