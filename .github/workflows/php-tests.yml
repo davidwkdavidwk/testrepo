@@ -35,10 +35,5 @@ jobs:
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
-    - name: Where are we
-      run: pwd
-    - name: What's here
-      run: ls -la
-
     - name: Run test suite
-      run: php ./vendor/bin/phpunit
+      run: php ./vendor/bin/phpunit tests
