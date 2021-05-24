@@ -1,3 +1,4 @@
+
 name: PHP Tests
 
 on:
@@ -26,6 +27,8 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
 
+    - name: Update composer
+      run: composer update
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
@@ -33,4 +36,4 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      run: php ./vendor/bin/phpunit
+      run: php ./vendor/bin/phpunit tests
